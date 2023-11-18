@@ -61,11 +61,12 @@
         <!-- Your navigation code remains unchanged -->
     </header>
     <div class="container-fluid">
-        <h1 class="text-center">Menu</h1>
+        <h1 class="text-center"> Tito Ben's Menu</h1>
         <br>
+        <h2 class="main-section row justify-content-center bg-dark p-2">Main Dishes</h2>
         <div class="main-section row justify-content-center">
         <div class=" col-12 col-md-6 menu-item">
-            <h3>BEEFBURGER</h3>
+            <h3>Beef Burger</h3>
             <p>Delicious beef burger with special sauce, fresh lettuce, and melted cheese.</p>
             <div>
                 <button class="burger-btn btn" onclick="showAllergens('BEEFBURGER')">Allergen Info</button>
@@ -80,7 +81,7 @@
 
         <!-- Additional menu items -->
         <div class=" col-12 col-md-6 menu-item">
-            <h3>ORANGE CHICKEN</h3>
+            <h3>Orange Chicken</h3>
             <p>Sweet and tangy orange-flavored chicken with a crispy coating.</p>
             <div>
                 <button class="burger-btn btn" onclick="showAllergens('ORANGE_CHICKEN')">Allergen Info</button>
@@ -94,7 +95,7 @@
         </div>
 
         <div class=" col-12 col-md-6 menu-item">
-            <h3>BBQ CHICKEN</h3>
+            <h3>BBQ Chicken</h3>
             <p>Grilled chicken coated in smoky barbecue sauce for a savory flavor.</p>
             <div>
                 <button class="burger-btn btn" onclick="showAllergens('BBQ_CHICKEN')">Allergen Info</button>
@@ -108,7 +109,7 @@
         </div>
 
         <div class=" col-12 col-md-6 menu-item">
-            <h3>SWEET CHILI CHICKEN</h3>
+            <h3>Sweet Chili Chicken</h3>
             <p>Chicken bites glazed with sweet and spicy chili sauce.</p>
             <div>
                 <button class="burger-btn btn" onclick="showAllergens('SWEET_CHILI_CHICKEN')">Allergen Info</button>
@@ -122,7 +123,7 @@
         </div>
 
         <div class="menu-item col-12 col-md-6 ">
-            <h3>REGULAR FRIED CHICKEN</h3>
+            <h3>Regular Fried Chicken</h3>
             <p>Classic fried chicken with a crispy golden crust.</p>
             <div>
                 <button class="burger-btn btn" onclick="showAllergens('REGULAR_FRIED_CHICKEN')">Allergen Info</button>
@@ -135,10 +136,73 @@
             </div>
         </div>
      </div>
-     <div class="side-section">
+     <div class="side-section ">
+        <br>
+        <h1 class="main-section row justify-content-center bg-dark p-2">Side Dishes</h1>
+        <div class="main-section row justify-content-center">
+        <div class=" col-12 col-md-6 menu-item">
+            <h3>Chicken Springroll with Potato Salad</h3>
+            <div>
+                <button class="csr-btn btn" onclick="showAllergens('csr')">Allergen Info</button>
+                <p class="allergens" id="allergens-csr" style="display: none">Contains: Wheat Flour Celery soya
+                </p>
+                <p class="mt-2">Price:
+                    <span>€5.00</span>
+                </p>
+            </div>
+        </div>
 
-     </div>
+        <!-- Additional menu items -->
+        <div class=" col-12 col-md-6 menu-item">
+            <h3>Pork Springroll with Potato Salad</h3>
+            <div>
+                <button class="psr-btn btn" onclick="showAllergens('psr')">Allergen Info</button>
+                <p class="allergens" id="allergens-psr" style="display: none">Contains: Wheat Flour Celery soya
+                </p>
+                <p class="mt-2">Price:
+                    <span>€5.00</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class=" col-12 col-md-6 menu-item menu-item">
+            <h3>Chips <span class="small">per portion</span></h3>
+            <div>
+                <button class="chips-btn btn" onclick="showAllergens('chips')">Allergen Info</button>
+                <p class="allergens" id="allergens-chips" style="display: none">Contains: none
+                </p>
+                <p class="mt-2">Price:
+                    <span>Large: €3.00</span>
+                    <span>Small: €2.00</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br>
+        <h1 class="main-section row justify-content-center bg-dark p-2">Drinks</h1>
+        <div class="main-section row justify-content-center">
+    <div class=" col-12 col-md-6 menu-item drink-item">
+            <h3>Coke | Fanta | 7up etc.</h3>
+                <p>Price:
+                    <span>€1.00</span>
+                </p>
+            </div>
 
+        <div class=" col-12 col-md-6 menu-item">
+            <h3>Water</h3>
+                <p>Price:
+                    <span>€1.00</span>
+                </p>
+            </div>
+
+        <div class=" col-12 col-md-6 menu-item">
+            <h3>Apple | Orange juice etc.</h3>
+                <p>Price:
+                    <span>€1.00</span>
+                </p>
+            </div>
+        </div>
     </div>
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/0969cca03a.js" crossorigin="anonymous"></script>
