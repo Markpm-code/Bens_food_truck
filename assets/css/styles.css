@@ -12,13 +12,6 @@ body {
     border-bottom-right-radius: 30%;
 }
 
-.foodtruck {
-    background: url('../images/ben_food_truck.jpg') no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
 .scrolling-text {
     text-align: center;
     overflow: hidden;
