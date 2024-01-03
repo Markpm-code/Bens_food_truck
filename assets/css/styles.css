@@ -25,7 +25,10 @@ body {
 
 .phone-icon{
     color:rgb(255, 208, 0);
-    background: linear-gradient(yellow, red);
+    border:2px solid #c3624a; 
+    border-radius: 6px;
+    padding: 2px;
+    width:2rem;
 }
 
 @keyframes scroll {
