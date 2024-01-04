@@ -20,7 +20,22 @@ body {
 .scrolling-text p {
     font-size: larger;
     display:inline-block;
-    animation: scroll 15s linear infinite;
+    animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+    10% {
+        transform:scale(50%);
+    }
+    50% {
+        transform:scale(75%);
+    }
+    25% {
+        transform:scale(100%);
+    }
+    100% {
+        transform: translateX(-150%);/*minus 130 fixed visibility in smaller device */
+    }
 }
 
 .phone-icon{
@@ -29,15 +44,6 @@ body {
     border-radius: 6px;
     padding: 2px;
     width:2rem;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-130%);/*minus 130 fixed visibility in smaller device*/
-    }
 }
 
 .contact-submit, 
