@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .menu-item {
-  border: 1px solid #c3624a; ;
+  border: 2px solid #c3624a; ;
+  box-shadow:#c3624a 6px 6px 6px ;
   border-radius: 8px;
-  margin: 10px;
+  margin:10px auto;
   padding: 10px;
-  width: 300px;
+  width: 600px;
+  height:fit-content;
   background-color: white;
   transition: transform 0.3s ease-in-out;
   font-family: 'Montserrat', sans-serif;
@@ -15,14 +17,19 @@
   transform: scale(1.05);
 }
 
+.menu-item > img {
+  box-shadow: 2px 2px 6px 6px rgba(27, 5, 5, 0.4);
+}
+
 .burger-btn,
-.orange-btn,
+.r-box-btn,
+.ck-btn,
 .bbq-btn,
-.sweet-btn,
-.fried-btn,
+.noodles-btn,
+.soft-rice-btn,
 .csr-btn,
 .psr-btn,
-.chips-btn {
+.smd-btn {
   background: linear-gradient(yellow, red);
   border-color: #FFFFFF;
   color: #FFFFFF;
@@ -52,4 +59,8 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.btn-dark {
+  box-shadow:#c3624a 0 5px 5px ;
 }
