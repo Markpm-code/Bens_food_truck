@@ -75,7 +75,7 @@ body {
 }
 
 .opening-times {
-    background-color:#FBA363 ;
+    background-color: #c3624a;
 }
 
 .marquee {
@@ -95,11 +95,13 @@ body {
 
   .marquee span {
     display: inline-block;
-    position: absolute;
-    /* top: 0; */
+    /* position: absolute; */
+    top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
     transform: translateX(-100%); /* Move the text back by half its width */
     white-space: nowrap;
-    animation: marquee 30s linear infinite; /* Adjust the duration here */
+    animation: marquee 20s linear infinite; /* Adjust the duration here */
   }
 
   @keyframes marquee {
