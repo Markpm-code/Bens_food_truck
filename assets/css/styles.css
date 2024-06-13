@@ -109,6 +109,21 @@ body {
     100% { transform: translateX(-100%); }
   }
 
+  /* @media (min-width: 996px) { */
+    /* .rm-btn { */
+      /* display:none; */
+    /* } */
+  /* } */
+  /* @media (max-width: 990px) { */
+    .read-more {
+      display:none;
+    }
+    /* .rm-btn { */
+        /* display:block; */
+      /* } */
+  /* } */
+
+
 @media (max-width: 360px) {
     .foodtruck {
       width:100%;

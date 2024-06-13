@@ -189,3 +189,8 @@ $(".rice").click(function () {
 
   });
 });
+
+$(".rm-btn").click(function () {
+  $(".read-more").show();
+  $(".rm-btn").hide();
+});
