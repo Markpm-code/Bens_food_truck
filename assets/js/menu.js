@@ -15,7 +15,7 @@ $(".logo").on("mouseover", function () {
 // When mouse leaves the logo, revert back to the previous image
 $(".logo").on("mouseleave", function () {
   var $this = $(this);
-  var previousImagePath = "assets/images/bens_logo.jpg";
+  var previousImagePath = "assets/images/bens-new-logo.jpg";
   setTimeout(function () {
     $this.attr("src", previousImagePath);
   }, 10000); // the delay time 
