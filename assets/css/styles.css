@@ -58,6 +58,15 @@ body {
     width:2rem;
 }
 
+.dropdown-divider {
+  border-top: 1px solid #c3624a;
+  margin: 5px 0;
+}
+
+.contact-divider {
+  border-top: 2px solid #c3624a;
+}
+
 .contact-submit, 
 .contact-email, 
 .contact-phone {
