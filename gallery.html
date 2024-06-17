@@ -64,30 +64,53 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <!-- Gallery images -->
+    <div class="container-fluid text-center">
         <div>
             <h1 class="text-center">Gallery</h1>
+            <div class="gallery-sub-heading bg-light p-4">
+                <h2>A Culinary Fusion of Filipino and Irish Flavours</h2>
+                <p class="gallery-paragraph">The Food Truck Images Gallery offers a vibrant glimpse into the world of mobile kitchens,
+                    highlighting the delicious fusion of Filipino and Irish cuisines. The gallery features
+                    tantalizing images of spring rolls, noodles, lugaw/Congee, and fried rice paired with fresh salads
+                    and delectable
+                    dessert, showcasing
+                    the rich and diverse flavours of the continent. Alongside these, the hearty comfort of Irish-inspired
+                    burgers, chicken goujons and chips adds a touch of European tradition
+                    to the mix.</p>
+            </div>
         </div>
-        <div class="row">
-            <div class="image-container col-12 ">
-              <img src="./assets/images/ben_food_truck.jpg" alt="Image 1" onclick="expandImage(this)" style="width:400px; height:360px;" class="img-fluid">
-              <img src="./assets/images/chicken-goujons-chips.jpg" alt="Image 2" onclick="expandImage(this)" style="width:400px; height:360px;" class="img-fluid">
-              <img src="./assets/images/gallery3.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
-              <img src="./assets/images/ben_foodprep.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
-              <img src="./assets/images/ben_noodles.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
-              <img src="./assets/images/ben_food_truck1.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <p>Burger</p><img src="./assets/images/chicken-burger-chips.jpg" class="img-fluid" alt="Image 1">
             </div>
-          
-            <!-- More images can be added dynamically -->
-            <div class="more-images" id="moreImages" style="display: none;">
-              <span>+2</span>
+            <div class="gallery-item">
+                <p>Student Meal</p><img src="./assets/images/chicken-goujons-chips.jpg" class="img-fluid" alt="Image 2">
             </div>
-          </div>
-          
-          <div id="expanded-image" class="expanded">
-            <span class="close-btn" onclick="closeImage()">×</span>
-            <img id="expanded-img" src="" alt="Expanded Image">
-          </div>
+            <div class="gallery-item">
+                <p>Noodles</p><img src="./assets/images/ben_noodles.jpg" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <p>Chicken Spring Roll</p><img src="./assets/images/spring-roll.png" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <p>Fried Chicken</p><img src="./assets/images/fc-curry-sauce.jpg" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <p>Rice Porridge</p><img src="./assets/images/rice-porridge.png" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item hidden">
+                <p>Noodles Meal</p><img src="./assets/images/noodles-meal.png" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item hidden">
+                <p>Pork Spring Roll</p><img src="./assets/images/spring-roll.png" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item hidden">
+                <p>Rice Box</p><img src="./assets/images/rice-box.png" class="img-fluid" alt="Image 3">
+            </div>
+            <!-- add more images here -->
+        </div>
+        <button class="btn btn-outline-dark" id="loadMore-btn">Load more</button>
     </div>
     <!--footer-->
     <footer class="bg-dark">
@@ -116,6 +139,9 @@
     </script>
     <script src="assets/js/gallery.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
