@@ -118,6 +118,10 @@ body {
     100% { transform: translateX(-100%); }
   }
 
+  .about p {
+    text-align: justify;
+  }
+
   /* @media (min-width: 996px) { */
     /* .rm-btn { */
       /* display:none; */
