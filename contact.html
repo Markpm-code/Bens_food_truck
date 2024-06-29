@@ -90,37 +90,38 @@
                         <li><i class="fa-solid fa-location-dot text-warning fs-4"></i> Address: Eyre Square, Galway, H91
                             T2CX</li>
                     </ul>
-                </div>
-                <div class="col-12 col-md-6">
+                </div><div class="col-12 col-md-6">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <h2 class="mb-4">Contact Form</h2>
                             <hr class="w-100 contact-divider">
-                            <form action="#" method="post">
+                            <form id="form">
                                 <!-- Name input -->
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <label for="name" class="form-label">Name:</label>
+                                    <input type="text" class="form-control" id="user_name" name="user_name" required>
                                 </div>
                                 <!-- Email input -->
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="user_email" name="user_email" required>
                                 </div>
                                 <!-- Subject input -->
                                 <div class="mb-3">
-                                    <label for="subject" class="form-label">Subject</label>
+                                    <label for="subject" class="form-label">Subject:</label>
                                     <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact_number" class="form-label">Contact Number (optional):</label>
+                                    <input type="text" class="form-control" name="contact_number" id="contact_number">
                                 </div>
                                 <!-- Message textarea -->
                                 <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5"
-                                        required></textarea>
+                                    <label for="message" class="form-label">Message:</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                                 </div>
                                 <!-- Submit button -->
-                                <button type="submit" class="btn contact-submit">Submit</button>
-
+                                 <input type="submit" id="button" class="btn contact-submit" value="Send Message">
                             </form>
                         </div>
                     </div>
@@ -188,6 +189,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
+    <!-- emailjs script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('BQDIVoHiRDuMGG9Y-')
+    </script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/menu.js" defer></script>
 
 
