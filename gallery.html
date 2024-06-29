@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <!-- css with render-blocking resources link -->
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="preload" href="assets/css/gallery.css" as="style">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
 
@@ -74,12 +77,14 @@
             <h1 class="text-center">Gallery</h1>
             <div class="gallery-sub-heading bg-light p-4">
                 <h2>A Culinary Fusion of Filipino and Irish Flavours</h2>
-                <p class="gallery-paragraph">The Food Truck Images Gallery offers a vibrant glimpse into the world of mobile kitchens,
+                <p class="gallery-paragraph">The Food Truck Images Gallery offers a vibrant glimpse into the world of
+                    mobile kitchens,
                     highlighting the delicious fusion of Filipino and Irish cuisines. The gallery features
                     tantalizing images of spring rolls, noodles, lugaw/Congee, and fried rice paired with fresh salads
                     and delectable
                     dessert, showcasing
-                    the rich and diverse flavours of the continent. Alongside these, the hearty comfort of Irish-inspired
+                    the rich and diverse flavours of the continent. Alongside these, the hearty comfort of
+                    Irish-inspired
                     burgers, chicken goujons and chips adds a touch of European tradition
                     to the mix.</p>
             </div>
@@ -95,7 +100,8 @@
                 <p>Noodles</p><img src="./assets/images/ben_noodles.jpg" class="img-fluid" alt="Image 3">
             </div>
             <div class="gallery-item">
-                <p>Chicken Spring Roll</p><img src="./assets/images/ck-spring-roll.png" class="img-fluid" alt="chicken spring roll">
+                <p>Chicken Spring Roll</p><img src="./assets/images/ck-spring-roll.png" class="img-fluid"
+                    alt="chicken spring roll">
             </div>
             <div class="gallery-item">
                 <p>Fried Chicken</p><img src="./assets/images/fc-curry-sauce.jpg" class="img-fluid" alt="Image 3">
@@ -107,7 +113,8 @@
                 <p>Noodles Meal</p><img src="./assets/images/noodles-meal.png" class="img-fluid" alt="Image 3">
             </div>
             <div class="gallery-item hidden">
-                <p>Pork Spring Roll</p><img src="./assets/images/pk-spring-roll.png" class="img-fluid" alt="spring roll">
+                <p>Pork Spring Roll</p><img src="./assets/images/pk-spring-roll.png" class="img-fluid"
+                    alt="spring roll">
             </div>
             <div class="gallery-item hidden">
                 <p>Burger</p><img src="./assets/images/chicken-burger-chips.jpg" class="img-fluid" alt="burger">
@@ -141,9 +148,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/gallery.js" defer></script>
     <script src="assets/js/menu.js"></script>
-   
+
 </body>
 
 </html>
