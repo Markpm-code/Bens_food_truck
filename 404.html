@@ -19,7 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Tito Ben's About Us</title>
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <title>Tito Ben's Food Truck</title>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo rounded" src="./assets/images/bens-new-logo.png" alt="Tito Ben's Food Truck Logo">
+                    <img class="logo rounded" src="./assets/images/bens-new-logo.jpg" alt="Tito Ben's Food Truck Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +60,10 @@
                             <a class="nav-link  fs-5" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  fs-5" href="">Services</a>
+                            <a class="nav-link  fs-5" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5" href="404.html">Four</a>
                         </li>
                     </ul>
                 </div>
@@ -67,68 +71,27 @@
         </nav>
     </header>
     <div class="container-fluid">
-        <h1 class="text-center">About us</h1>
-        <br>
-        <div class="about_paragraph container">
-            <div class="row">
-                <p>Tito Ben's culinary journey began in Ireland in August 2001 when he joined the kitchen at Park House
-                    Hotel in Galway City.</p>
+        <div class="col-md-6 text-center off-track mx-auto">
+            <div>
+                <h1>
+                    Sorry, the page you are looking for is off-track on this site.
+                </h1>
+                <img src="./assets/images/off-truck.png" class="img-fluid mx-auto" alt="off track">
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 mt-4">
-                    <img class="img-fluid rounded" src="./assets/images/ben_foodprep.jpg" alt="ben displaying food"
-                        style="width:600px;height:460px;">
-                </div>
-                <div class="col about">
-                    <p>Over the years, he honed his skills, working at notable establishments like the G Hotel in
-                        Wellpark and
-                        serving as a chef for 15 years at the Franciscan Friars in Galway City, particularly at The
-                        Abbey
-                        Church.</p>
-                    <p>Tito Ben also sought further culinary education, attending courses in Italian cooking in Dublin
-                        and a
-                        cookery school under the guidance of JP McMahon in Galway City.</p>
-                    <p> His commitment to culinary excellence led him to Atlantic Technological University (ATU) in
-                        Galway City,
-                        where he dedicated a year to study Culinary Skills, including a work placement at Raheen Woods
-                        Hotel in
-                        Athenry.
-                    </p>
-                    <p>In 2012, Tito Ben ventured into food catering, specializing in Filipino cuisine for special
-                        events. In
-                        2021, he took his passion for food to the next level by launching his food truck business. His
-                        first
-                        trading market was in Maam Cross, Connemara, Moycullen market and Cross Co. Mayo.</p><button
-                        class="rm-btn btn btn-outline-dark">Read more...</button>
-                </div>
-            </div>
-            <div class="row read-more">
-                <div class="col mt-4 about">
-                    <p>Currently, the family, which includes Ben, Pebe, Chloe, and Bj, collectively runs the business.
-                        They
-                        pride themselves on serving a diverse array of delectable Irish and Filipino dishes. From
-                        Gourmet
-                        Burgers and Spring Rolls (Lumpia) to Fried Chicken, Noodles, and Rice Porridge, they offer a
-                        fusion of
-                        flavours
-                        that cater to a wide range of tastes.
-                    </p>
-                    <p>Today, their food truck operates in Eyre Square, Galway City beside the Galway Advertiser serving
-                        up delicious dishes five days a week.
-                        They
-                        are committed to sharing their love for food and delivering mouth-watering culinary experiences
-                        to their
-                        patrons.
-                    </p>
-                </div>
+            <div class="my-4">
+                <h4>
+                    <a href="index.html" class="btn btn-lg btn-outline-dark text-uppercase py-2  text-white rounded">
+                        Please return to homepage
+                    </a>
+                </h4>
             </div>
         </div>
     </div>
     <!--footer-->
     <footer class="bg-dark">
         <div class="container">
-            <div class="d-flex flex-wrap justify-content-between align-items-center p-5 mt-5 ">
-                <p class="col-md-4 mb-0 ">© 2023 PAM Solutions</p>
+            <div class="d-flex flex-wrap justify-content-between align-items-center p-5 mt-5">
+                <p class="col-md-4 mb-0 footer-link">© 2023 PAM Solutions</p>
 
                 <a href="#"
                     class="col-md-4 d-flex align-items-center justify-content-center mb-md-0 me-md-auto  text-decoration-none">
@@ -149,6 +112,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
+    <script src="assets/js/scrolling_text.js"></script>
     <script src="assets/js/menu.js"></script>
 </body>
 

@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A food truck website serving Filipino and Irish foods in the heart of galway city">
+    <meta name="keywords"
+        content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away">
+    <!-- Favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Tito Ben's Food Truck</title>
+    <title>Tito Ben's Food Contact</title>
 </head>
 
 <body>
@@ -20,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo rounded" src="./assets/images/bens_logo.jpg" alt="Tito Ben's Food Truck Logo">
+                    <img class="logo rounded" src="./assets/images/bens-new-logo.png" alt="Tito Ben's Food Truck Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +42,7 @@
                             <a class="nav-link  fs-5" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  fs-5" href="">Gallery</a>
+                            <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -44,8 +51,8 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="contact.html">Location</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#location">Location</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -61,30 +68,32 @@
     </header>
     <div>
         <h1 class="text-center">Contact us</h1>
-        <div class="container contact_info">
-            <p class="text-center fs-5">
-                Thank you for your interest in our food truck! Feel free to reach out to us for inquiries, bookings, or
+        <div class="container-fluid contact_info">
+            <p class="text-center">
+                Thank you for your interest in our food truck! Feel free to reach out to us for inquiries or
                 any questions you may have.
             </p>
-            <div class="row">
+            <div class="row bg-light p-4 rounded mx-2">
                 <div class="col-12 col-md-6">
                     <h2>Contact Information</h2>
-                    <hr class="w-75">
+                    <hr class="w-100  contact-divider">
                     <ul class="list-unstyled">
                         <li><i class="fa-solid fa-square-phone text-warning  contact-phone fs-4"></i> Phone: 0877401707
                         </li>
                         <br>
-                        <li><i class="fa-solid fa-envelope  text-warning contact-email fs-4"></i> Email: ben@gmail.com
+                        <li><i class="fa-solid fa-envelope  text-warning contact-email fs-4"></i> Email:
+                            bernardbertulfo78@gmail.com
                         </li>
                         <br>
-                        <li><i class="fa-solid fa-location-dot text-warning fs-4"></i> Address: Eyre Square, Galway, H91 T2CX</li>
+                        <li><i class="fa-solid fa-location-dot text-warning fs-4"></i> Address: Eyre Square, Galway, H91
+                            T2CX</li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <h2 class="mb-4">Contact Form</h2>
-                            <hr class="w-100">
+                            <hr class="w-100 contact-divider">
                             <form action="#" method="post">
                                 <!-- Name input -->
                                 <div class="mb-3">
@@ -118,7 +127,7 @@
         </div>
     </div>
     <!-- google maps -->
-    <div class="mt-4">
+    <div class="mt-4" id="location">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d170.92828624451067!2d-9.051179603818639!3d53.273399271571876!2m2!1f14.580615547511314!2f44.968516028110386!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x485bc3a4e6c9f38d%3A0x47ca860f27d78fc4!2sTito%20Ben&#39;s%20Food%20Truck%20and%20Take%20Away!5e1!3m2!1sen!2sie!4v1704905345054!5m2!1sen!2sie"
             width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
@@ -129,10 +138,10 @@
             <h3 class="text-center">Opening Times:</h3>
             <div class="d-flex justify-content-center">
                 <ul class="list-unstyled text-white">
-                    <li><strong>Monday</strong>: 11 a.m. - 6 p.m.</li>
-                    <li><strong>Tuesday</strong>: 11 a.m. - 6 p.m.</li>
-                    <li><strong>Wednesday</strong>: 11 a.m. - 6 p.m.</li>
-                    <li><strong>Thursday</strong>: 11 a.m. - 6 p.m.</li>
+                    <li><strong>Monday</strong>: Closed</li>
+                    <li><strong>Tuesday</strong>: 12 a.m. - 6 p.m.</li>
+                    <li><strong>Wednesday</strong>: 12 a.m. - 6 p.m.</li>
+                    <li><strong>Thursday</strong>: 12 a.m. - 6 p.m.</li>
                     <li><strong>Friday</strong>: 11 a.m. - 6 p.m.</li>
                     <li><strong>Saturday</strong>: 11 a.m. - 6 p.m.</li>
                     <li><strong>Sunday</strong>: Closed</li>
@@ -141,12 +150,13 @@
         </div>
         <div class="col-12 col-md-6 mt-4">
             <h3 class="text-center">Additional Information:</h3>
-            <div class="text-white">
-                <p>Our Food truck is only a few minutes walk away from Eyre Square Shopping Center and fronting Galway Advertiser.</p>
+            <div class="text-white mx-2">
+                <p>Our Food truck is only a few minutes walk away from Eyre Square Shopping Center and fronting Galway
+                    Advertiser.</p>
                 <p>You can also find us using this Google Coordinates: 53.275228870010395, -9.050455331242258</p>
-                <p>The opening times on this website does not auto update. Please search <span><a class="text-decoration-none text-dark"
-                            href=https://maps.app.goo.gl/Wi93JSzmQA8xTU3j6 target="_blank"
-                            rel="noopener">Tito Ben's Food Truck</a></span> in
+                <p>The opening times on this website does not auto update. Please search <span><a class=" text-dark"
+                            href=https://maps.app.goo.gl/Wi93JSzmQA8xTU3j6 target="_blank" rel="noopener">Tito Ben's
+                            Food Truck</a></span> in
                     Google Maps for accurate information. Thank you. </p>
             </div>
         </div>
@@ -176,7 +186,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-    <script src="script.js"></script>
+    <script src="assets/js/menu.js"></script>
+
 
 </body>
 

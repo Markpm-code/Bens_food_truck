@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A food truck website serving Filipino and Irish foods in the heart of galway city">
+    <meta name="keywords"
+        content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away">
+    <!-- Favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -14,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
 
-    <title>Tito Ben's Food Truck</title>
+    <title>Tito Ben's Food Gallery</title>
 </head>
 
 <body>
@@ -22,7 +29,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo rounded" src="./assets/images/bens_logo.jpg" alt="Tito Ben's Food Truck Logo">
+                    <img class="logo rounded" src="./assets/images/bens-new-logo.png" alt="Tito Ben's Food Truck Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +41,21 @@
                             <a class="nav-link  fs-5 " href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  fs-5" href="">Menu</a>
+                            <a class="nav-link  fs-5" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="">Contact</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#location">Location</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  fs-5" href="about.html">About</a>
@@ -53,30 +68,53 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <!-- Gallery images -->
+    <div class="container-fluid text-center">
         <div>
             <h1 class="text-center">Gallery</h1>
+            <div class="gallery-sub-heading bg-light p-4">
+                <h2>A Culinary Fusion of Filipino and Irish Flavours</h2>
+                <p class="gallery-paragraph">The Food Truck Images Gallery offers a vibrant glimpse into the world of mobile kitchens,
+                    highlighting the delicious fusion of Filipino and Irish cuisines. The gallery features
+                    tantalizing images of spring rolls, noodles, lugaw/Congee, and fried rice paired with fresh salads
+                    and delectable
+                    dessert, showcasing
+                    the rich and diverse flavours of the continent. Alongside these, the hearty comfort of Irish-inspired
+                    burgers, chicken goujons and chips adds a touch of European tradition
+                    to the mix.</p>
+            </div>
         </div>
-        <div class="row">
-            <div class="image-container col-12 ">
-              <img src="./assets/images/ben_food_truck.jpg" alt="Image 1" onclick="expandImage(this)" style="width:400px; height:360px;" class="img-fluid">
-              <img src="./assets/images/bens_logo.jpg" alt="Image 2" onclick="expandImage(this)" style="width:400px; height:360px;" class="img-fluid">
-              <img src="./assets/images/gallery3.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
-              <img src="./assets/images/ben_foodprep.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
-              <img src="./assets/images/ben_noodles.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
-              <img src="./assets/images/ben_food_truck1.jpg" alt="Image 3" onclick="expandImage(this)" style="width:400px; height:360px;"  class="img-fluid">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <p>Rice Box</p><img src="./assets/images/rice-box (2).png" class="img-fluid" alt="rice box">
             </div>
-          
-            <!-- More images can be added dynamically -->
-            <div class="more-images" id="moreImages" style="display: none;">
-              <span>+2</span>
+            <div class="gallery-item">
+                <p>Student Meal</p><img src="./assets/images/chicken-goujons-chips.jpg" class="img-fluid" alt="Image 2">
             </div>
-          </div>
-          
-          <div id="expanded-image" class="expanded">
-            <span class="close-btn" onclick="closeImage()">×</span>
-            <img id="expanded-img" src="" alt="Expanded Image">
-          </div>
+            <div class="gallery-item">
+                <p>Noodles</p><img src="./assets/images/ben_noodles.jpg" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <p>Chicken Spring Roll</p><img src="./assets/images/ck-spring-roll.png" class="img-fluid" alt="chicken spring roll">
+            </div>
+            <div class="gallery-item">
+                <p>Fried Chicken</p><img src="./assets/images/fc-curry-sauce.jpg" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <p>Rice Porridge</p><img src="./assets/images/rice-porridge.png" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item hidden">
+                <p>Noodles Meal</p><img src="./assets/images/noodles-meal.png" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="gallery-item hidden">
+                <p>Pork Spring Roll</p><img src="./assets/images/pk-spring-roll.png" class="img-fluid" alt="spring roll">
+            </div>
+            <div class="gallery-item hidden">
+                <p>Burger</p><img src="./assets/images/chicken-burger-chips.jpg" class="img-fluid" alt="burger">
+            </div>
+            <!-- add more images here -->
+        </div>
+        <button class="btn btn-outline-dark" id="loadMore-btn">Load more</button>
     </div>
     <!--footer-->
     <footer class="bg-dark">
@@ -104,7 +142,8 @@
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <script src="assets/js/gallery.js"></script>
-
+    <script src="assets/js/menu.js"></script>
+   
 </body>
 
 </html>

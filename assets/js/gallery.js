@@ -1,9 +1,8 @@
-function expandImage(element) {
-    const imagePath = element.getAttribute('src');
-    document.getElementById('expanded-img').setAttribute('src', imagePath);
-    document.getElementById('expanded-image').style.display = 'flex';
-  }
-  
-  function closeImage() {
-    document.getElementById('expanded-image').style.display = 'none';
-  }
+  // Gallery load more button script
+  $('#loadMore-btn').click(function () {
+    var hiddenItems = document.querySelectorAll('.gallery-item.hidden');
+    for (var i = 0; i < hiddenItems.length; i++) {
+      hiddenItems[i].classList.remove('hidden');
+    }
+    $('#loadMore-btn').hide();
+  })
