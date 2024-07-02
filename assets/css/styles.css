@@ -72,10 +72,19 @@ body {
   border-top: 2px solid #c3624a;
 }
 
-.contact-submit,
-.contact-email,
-.contact-phone {
+/*contact information icons */
+.contact-email-icon,
+.contact-phone-icon,
+.contact-location-icon {
   background: linear-gradient(yellow, red);
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.contact-submit-btn {
+  background: linear-gradient(yellow, red);
+  color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
