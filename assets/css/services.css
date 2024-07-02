@@ -1,0 +1,36 @@
+.services-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: large;
+    text-align: justify;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.fa-phone,
+.fa-bowl-food,
+.fa-road,
+.fa-arrow-right-arrow-left {
+    background: linear-gradient(yellow, red);
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.fa-person-walking {
+    background: linear-gradient(yellow, red);
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .services-container {
+        padding: 40px;
+    }
+}
+@media (max-width: 912px) {
+    .services-container {
+        padding: 20px;
+    }
+}

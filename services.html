@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A food truck website serving Filipino and Irish foods in the heart of galway city">
+    <meta name="keywords"
+        content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away">
+    <!-- Favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -13,8 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <!-- css with render-blocking resources link -->
     <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="preload" href="assets/css/services.css" as="style">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/services.css">
     <title>Tito Ben's Food Services</title>
 </head>
 
@@ -48,7 +56,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
                                 <hr>
-                                <li><a class="dropdown-item" href="contact.html">Location</a></li>
+                                <li><a class="dropdown-item" href="#location">Location</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -62,9 +70,83 @@
             </div>
         </nav>
     </header>
-        <div class="marquee">
-            <span>This is the continuously moving text for information purposes.</span>
+    <div class="container">
+        <div>
+            <h2 class="text-center">Our Services</h2>
         </div>
+        <div class="services-container bg-light">
+            <section id="services">
+                <div class="mt-4">
+                    <h3><i class="fa-solid fa-phone"></i> Call-and-Collect</h3>
+                    <p>Customers can call ahead to place their orders. Once the order is ready, they receive a call,
+                        text
+                        messge or notification or estimated time for pickup.</p>
+                    <p class="fw-bold"><strong>Process:</strong></p>
+                    <ul>
+                        <li>Customer calls Tito Ben's and places an order.</li>
+                        <li>Food truck staff prepares the order and provides an estimated ready time.</li>
+                        <li>Customer arrives at the food truck, states their name or order number, and collects their
+                            order
+                            at the window.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3> <i class="fa-solid fa-person-walking"></i> Walk-In</h3>
+                    <p>Customers can walk up to the food truck to place their orders and either wait for them to be
+                        prepared
+                        or take them to-go immediately.</p>
+                    <p class="fw-bold"><strong>Process:</strong></p>
+                    <ul>
+                        <li>Customer walks up to Tito Ben's Foodtruck and places an order at the window.</li>
+                        <li>If waiting, the customer can take a look on the menu or stand nearby.</li>
+                        <li>Once the order is ready, it is handed to the customer.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><i class="fa-solid fa-bowl-food"></i> Takeaway Only</h3>
+                    <p>Tito Ben's Foodtruck does not offer dine-in services. All orders are prepared for takeaway only.
+                    </p>
+                    <p class="fw-bold"><strong>Process:</strong></p>
+                    <ul>
+                        <li>All orders, whether call-and-collect or walk-in, are packaged for takeaway.</li>
+                        <li>Customers can enjoy their food elsewhere, supporting a quick turnover of orders.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><i class="fa-solid fa-road"></i> Kerbside Pickup</h3>
+                    <p>While Tito Ben's Food Truck does not have dedicated parking, we offer kerbside pickup for quick
+                        and
+                        convenient collection of orders.</p>
+                    <p class="fw-bold"><strong>Process:</strong></p>
+                    <ul>
+                        <li>Customer calls upon arrival and provides their name or order number.</li>
+                        <li>A staff member brings the order out to the customer’s car, ensuring a quick handoff without
+                            the
+                            need for the customer to park or leave their vehicle.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mt-4">
+                <h3><i class="fa-solid fa-arrow-right-arrow-left"></i> Service Flow:</h3>
+                <h4>Morning:</h4>
+                <ul>
+                    <li>Office workers call ahead or walk up for their breakfast orders.</li>
+                    <li>Quick kerbside pickups for those driving by on their way to work.</li>
+                </ul>
+                <h4>Lunchtime:</h4>
+                <ul>
+                    <li>Employees from nearby businesses walk up or call ahead to pick up lunch.</li>
+                    <li>Kerbside service for those stopping by quickly during their lunch break.</li>
+                </ul>
+                <h4>Evening:</h4>
+                <ul>
+                    <li>Residents and visitors walk up to grab dinner or call ahead while heading home.</li>
+                    <li>Kerbside pickups for those wanting to grab a quick meal without parking.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 
     <!--footer-->
     <footer class="bg-dark">
@@ -72,8 +154,9 @@
             <div class="d-flex flex-wrap justify-content-between align-items-center p-5 mt-5">
                 <p class="col-md-4 mb-0 ">© 2023 PAM Solutions</p>
 
-                <a href="#"
-                    class="col-md-4 d-flex align-items-center justify-content-center mb-md-0 me-md-auto  text-decoration-none">
+                <a href="https://www.facebook.com/profile.php?id=100092185530097"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-md-0 me-md-auto  text-decoration-none"
+                    target="_blank" rel="noopener">
                     Follow us on Facebook
                 </a>
 
