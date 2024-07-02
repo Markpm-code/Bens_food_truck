@@ -56,12 +56,12 @@ body {
 }
 
 .phone-icon {
-  color: rgb(255, 208, 0);
-  border: 2px solid #c3624a;
-  border-radius: 6px;
-  padding: 2px;
-  width: 2rem;
+  background: linear-gradient(yellow, red);
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 6px;
 }
+
 
 .dropdown-divider {
   border-top: 1px solid #c3624a;
