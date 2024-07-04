@@ -92,7 +92,8 @@ body {
 .about_paragraph p,
 .contact_info,
 .opening-times,
-.reviews-paragraph {
+.reviews-paragraph,
+.privacy-container p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: large;
@@ -102,8 +103,14 @@ body {
   background-color: #c3624a;
 }
 
+/* privacy policy */
+.privacy-container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .about p,
-.add-info p {
+.add-info p,
+.privacy-container p {
   text-align: justify;
 }
 
