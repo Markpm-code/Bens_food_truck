@@ -137,13 +137,30 @@ body {
   display: none;
 }
 
+.fa-facebook,
+.fa-shield-halved,
+.fa-globe {
+  background: linear-gradient(yellow, red);
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer_logo {
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  background: linear-gradient(yellow, red);
+  padding: 2px;
+}
+
 @media (max-width:1024px) {
   .off-track h1 {
     text-align: justify;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 360px) { 
   .foodtruck {
     width: 100%;
   }
