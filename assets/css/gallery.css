@@ -24,10 +24,10 @@
   }
 
   25% {
-    transform: scale(50%);
+    transform: scale(0.5);
   }
   25% {
-    transform: scale(100%);
+    transform: scale(1);
 }
 }
 

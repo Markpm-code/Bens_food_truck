@@ -39,15 +39,15 @@ body {
   }
 
   10% {
-    transform: scale(50%);
+    transform: scale(0.5);
   }
 
   50% {
-    transform: scale(75%);
+    transform: scale(0.75);
   }
 
   25% {
-    transform: scale(100%);
+    transform: scale(1);
   }
 
   100% {
