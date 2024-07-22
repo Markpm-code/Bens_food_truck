@@ -99,8 +99,8 @@
                     <div class="mb-4" id="location">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d170.92828624451067!2d-9.051179603818639!3d53.273399271571876!2m2!1f14.580615547511314!2f44.968516028110386!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x485bc3a4e6c9f38d%3A0x47ca860f27d78fc4!2sTito%20Ben&#39;s%20Food%20Truck%20and%20Take%20Away!5e1!3m2!1sen!2sie!4v1704905345054!5m2!1sen!2sie"
-                            width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" title="Tito Bens location" defer></iframe>
+                            class="w-100" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Tito Bens location" ></iframe>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -111,13 +111,13 @@
                             <form id="form">
                                 <!-- Name input -->
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Name:</label>
+                                    <label for="user_name" class="form-label">Name:</label>
                                     <input type="text" class="form-control" placeholder="Full Name" id="user_name"
                                         name="user_name" required>
                                 </div>
                                 <!-- Email input -->
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email:</label>
+                                    <label for="user_email" class="form-label">Email:</label>
                                     <input type="email" class="form-control" placeholder="email" id="user_email"
                                         name="user_email" required>
                                 </div>
@@ -244,9 +244,9 @@
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <!-- emailjs script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <script type="text/javascript">
+    <script>
         emailjs.init('_MhkCKFB2NgBvhofw')
     </script>
     <script src="assets/js/contact.js"></script>
