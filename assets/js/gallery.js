@@ -5,4 +5,4 @@
       hiddenItems[i].classList.remove('hidden');
     }
     $('#loadMore-btn').hide();
-  })
+  });
