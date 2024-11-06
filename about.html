@@ -1,169 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A food truck website serving Filipino and Irish foods in the heart of galway city">
-    <meta name="keywords"
-        content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A food truck website serving Filipino and Irish foods in the heart of galway city"
+    />
+    <meta
+      name="keywords"
+      content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away"
+    />
     <!-- Favicon icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
     <!-- css with render-blocking resources link -->
-    <link rel="preload" href="assets/css/styles.css" as="style">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Tito Ben's About Us</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo rounded" src="./assets/images/bens-new-logo.png" alt="Tito Ben's Food Truck Logo">
+      <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo rounded"
+              src="./assets/images/bens-new-logo.png"
+              alt="Tito Ben's Food Truck Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse  justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link  fs-5 " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link fs-5 dropdown-toggle"
+                  href="contact.html"
+                  id="contactDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5 " href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link fs-5 dropdown-toggle" href="contact.html" id="contactDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Contact
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
-                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#location">Location</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="services.html">Services</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Location</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="services.html">Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="container-fluid">
-        <h1 class="text-center">About us</h1>
-        <br>
-        <div class="about_paragraph container">
-            <div class="row">
-                <p>Tito Ben's culinary journey began in Ireland in August 2001 when he joined the kitchen at Park House
-                    Hotel in Galway City.</p>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 mt-4">
-                    <img class="img-fluid rounded" src="./assets/images/ben_foodprep.jpg" alt="ben displaying food"
-                        style="width:600px;height:460px;">
-                </div>
-                <div class="col about">
-                    <p>Over the years, he honed his skills, working at notable establishments like the G Hotel in
-                        Wellpark and
-                        serving as a chef for 15 years at the Franciscan Friars in Galway City, particularly at The
-                        Abbey
-                        Church.</p>
-                    <p>Tito Ben also sought further culinary education, attending courses in Italian cooking in Dublin
-                        and a
-                        cookery school under the guidance of JP McMahon in Galway City.</p>
-                    <p> His commitment to culinary excellence led him to Atlantic Technological University (ATU) in
-                        Galway City,
-                        where he dedicated a year to study Culinary Skills, including a work placement at Raheen Woods
-                        Hotel in
-                        Athenry.
-                    </p>
-                    <p>In 2012, Tito Ben ventured into food catering, specializing in Filipino cuisine for special
-                        events. In
-                        2021, he took his passion for food to the next level by launching his food truck business. His
-                        first
-                        trading market was in Maam Cross, Connemara, Moycullen market and Cross Co. Mayo.</p><button
-                        class="rm-btn btn btn-outline-dark">Read more...</button>
-                </div>
-            </div>
-            <div class="row read-more">
-                <div class="col mt-4 about">
-                    <p>Currently, the family, which includes Ben, Pebe, Chloe, and Bj, collectively runs the business.
-                        They
-                        pride themselves on serving a diverse array of delectable Irish and Filipino dishes. From
-                        Gourmet
-                        Burgers and Spring Rolls (Lumpia) to Fried Chicken, Noodles, and Rice Porridge, they offer a
-                        fusion of
-                        flavours
-                        that cater to a wide range of tastes.
-                    </p>
-                    <p>Today, their food truck operates in Eyre Square, Galway City beside the Galway Advertiser serving
-                        up delicious dishes five days a week.
-                        They
-                        are committed to sharing their love for food and delivering mouth-watering culinary experiences
-                        to their
-                        patrons.
-                    </p>
-                </div>
-            </div>
+      <h1 class="text-center">About us</h1>
+      <br />
+      <div class="about_paragraph container">
+        <div class="row">
+          <p>
+            Tito Ben's culinary journey began in Ireland in August 2001 when he
+            joined the kitchen at Park House Hotel in Galway City.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-12 col-md-6 mt-4">
+            <img
+              class="img-fluid rounded"
+              src="./assets/images/ben_foodprep.jpg"
+              alt="ben displaying food"
+              style="width:600px;height:460px;"
+            />
+          </div>
+          <div class="col about">
+            <p>
+              Over the years, he honed his skills, working at notable
+              establishments like the G Hotel in Wellpark and serving as a chef
+              for 15 years at the Franciscan Friars in Galway City, particularly
+              at The Abbey Church.
+            </p>
+            <p>
+              Tito Ben also sought further culinary education, attending courses
+              in Italian cooking in Dublin and a cookery school under the
+              guidance of JP McMahon in Galway City.
+            </p>
+            <p>
+              His commitment to culinary excellence led him to Atlantic
+              Technological University (ATU) in Galway City, where he dedicated
+              a year to study Culinary Skills, including a work placement at
+              Raheen Woods Hotel in Athenry.
+            </p>
+            <p>
+              In 2012, Tito Ben ventured into food catering, specializing in
+              Filipino cuisine for special events. In 2021, he took his passion
+              for food to the next level by launching his food truck business.
+              His first trading market was in Maam Cross, Connemara, Moycullen
+              market and Cross Co. Mayo.
+            </p>
+            <button class="rm-btn btn btn-outline-dark">Read more...</button>
+          </div>
+        </div>
+        <div class="row read-more">
+          <div class="col mt-4 about">
+            <p>
+              Currently, the family, which includes Ben, Pebe, Chloe, and Bj,
+              collectively runs the business. They pride themselves on serving a
+              diverse array of delectable Irish and Filipino dishes. From
+              Gourmet Burgers and Spring Rolls (Lumpia) to Fried Chicken,
+              Noodles, and Rice Porridge, they offer a fusion of flavours that
+              cater to a wide range of tastes.
+            </p>
+            <p>
+              Today, their food truck operates in Eyre Square, Galway City
+              beside the Galway Advertiser serving up delicious dishes five days
+              a week. They are committed to sharing their love for food and
+              delivering mouth-watering culinary experiences to their patrons.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <!--footer-->
     <footer class="bg-dark p-4 mt-5">
-        <div class="container-fluid">
-            <div class="row p-2">
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <img class="footer_logo d-inline" src="./assets/images/bens-new-logo.png"
-                        alt="Tito Ben's Food Truck Logo">
-                    <p class="d-inline">© <span id="copyrightYear"></span> Tito Ben's Foodtruck</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <a href="https://www.facebook.com/profile.php?id=100092185530097" class="text-decoration-none"
-                        target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i>
-                        Follow us on Facebook
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2 ">
-                    <a href="privacy-policy.html" class="text-decoration-none"><i class="fa-solid fa-shield-halved"></i>
-                        Privacy Policy
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <p><i class="fa-solid fa-globe"></i>
-                        Web design by: <span class="bg-light p-2 rounded d-block mt-2 text-center"><i class="fa-solid fa-dove"></i> PAM Web Solutions</span>
-                    </p>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row p-2">
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <img
+              class="footer_logo d-inline"
+              src="./assets/images/bens-new-logo.png"
+              alt="Tito Ben's Food Truck Logo"
+            />
+            <p class="d-inline">
+              © <span id="copyrightYear"></span> Tito Ben's Foodtruck
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <a
+              href="https://www.facebook.com/profile.php?id=100092185530097"
+              class="text-decoration-none"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-facebook"></i>
+              Follow us on Facebook
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2 ">
+            <a href="privacy-policy.html" class="text-decoration-none"
+              ><i class="fa-solid fa-shield-halved"></i>
+              Privacy Policy
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <p>
+              <i class="fa-solid fa-globe"></i> Web design by:
+              <span class="bg-light p-2 rounded d-block mt-2 text-center"
+                ><i class="fa-solid fa-dove"></i> PAM Web Solutions</span
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
     <!--fontawesome kit-->
-    <script src="https://kit.fontawesome.com/0969cca03a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://kit.fontawesome.com/0969cca03a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/menu.js" defer></script>
     <script src="assets/js/current_year.js" defer></script>
-</body>
-
+  </body>
 </html>

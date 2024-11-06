@@ -1,341 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A food truck website serving Filipino and Irish foods in the heart of galway city">
-    <meta name="keywords"
-        content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A food truck website serving Filipino and Irish foods in the heart of galway city"
+    />
+    <meta
+      name="keywords"
+      content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away"
+    />
     <!-- Favicon icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
     <!-- css with render-blocking resources link -->
-    <link rel="preload" href="assets/css/styles.css" as="style">
-    <link rel="preload" href="assets/css/menu.css" as="style">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="preload" href="assets/css/menu.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
     <title>Tito Ben's Food Menu</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo rounded" src="./assets/images/bens-new-logo.png" alt="Tito Ben's Food Truck Logo">
+      <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo rounded"
+              src="./assets/images/bens-new-logo.png"
+              alt="Tito Ben's Food Truck Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse  justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link  fs-5 " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link fs-5 dropdown-toggle"
+                  href="contact.html"
+                  id="contactDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5 " href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link fs-5 dropdown-toggle" href="contact.html" id="contactDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Contact
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
-                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#location">Location</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="services.html">Services</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Location</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="services.html">Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="container-fluid">
-        <h1 class="text-center"> Tito Ben's Menu</h1>
-        <br>
-        <div class="row text-center mx-2 menu-list">
-            <div class="col-sm  g-2 active btn btn-dark mx-2 fs-5 burger">Burgers</div>
-            <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 rb-meal">Rice Box</div>
-            <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 fchicken">Chicken</div>
-            <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 spr_rolls">Spring Rolls/Lumpia</div>
-            <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 noodles">Noodles/Pancit</div>
-            <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 s-meal">Student Meal</div>
-            <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 rice">Rice Porridge/Lugaw</div>
+      <h1 class="text-center">Tito Ben's Menu</h1>
+      <br />
+      <div class="row text-center mx-2 menu-list">
+        <div class="col-sm  g-2 active btn btn-dark mx-2 fs-5 burger">
+          Burgers
         </div>
-        <!-- Burgers -->
-        <div class="text-center mt-4 burger-items mx-2">
-            <h2><i class="fa-solid fa-fire"></i> Burgers <i class="fa-solid fa-fire"></i></h2>
-            <hr>
-            <div class="row mt-4">
-                <div class=" menu-item">
-                    <h3>Beef Burger & Chips</h3>
-                    <img src="assets/images/chicken-burger-chips.jpg" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="Beef Burger">
-                    <p class="mt-2">Delicious beef burger with special sauce, fresh lettuce, and melted cheese.</p>
-                    <div>
-                        <button class="burger-btn btn" onclick="showAllergens('beef-burger')">Allergen Info</button>
-                        <p class="allergens" id="allergens-beef-burger" style="display: none">Contains: eggs, milk,
-                            wheat
-                            flour
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€8.50</span>
-                        </p>
-                    </div>
-                </div>
-                <div class=" menu-item">
-                    <h3>Chicken Burger & Chips</h3>
-                    <img src="assets/images/chicken-burger-chips.jpg" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="Chicken Burger">
-                    <p class="mt-2">Delicious chicken burger with special sauce, fresh lettuce, and melted cheese.</p>
-                    <div>
-                        <button class="ck-btn btn" onclick="showAllergens('ck-burger')">Allergen Info</button>
-                        <p class="allergens" id="allergens-ck-burger" style="display: none">Contains: eggs, milk, wheat
-                            flour
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€8.50</span>
-                        </p>
-                    </div>
-                </div>
+        <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 rb-meal">Rice Box</div>
+        <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 fchicken">Chicken</div>
+        <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 spr_rolls">
+          Spring Rolls/Lumpia
+        </div>
+        <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 noodles">
+          Noodles/Pancit
+        </div>
+        <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 s-meal">
+          Student Meal
+        </div>
+        <div class="col-sm  g-2 btn btn-dark mx-2 fs-5 rice">
+          Rice Porridge/Lugaw
+        </div>
+      </div>
+      <!-- Burgers -->
+      <div class="text-center mt-4 burger-items mx-2">
+        <h2>
+          <i class="fa-solid fa-fire"></i> Burgers
+          <i class="fa-solid fa-fire"></i>
+        </h2>
+        <hr />
+        <div class="row mt-4">
+          <div class=" menu-item">
+            <h3>Beef Burger & Chips</h3>
+            <img
+              src="assets/images/chicken-burger-chips.jpg"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="Beef Burger"
+            />
+            <p class="mt-2">
+              Delicious beef burger with special sauce, fresh lettuce, and
+              melted cheese.
+            </p>
+            <div>
+              <button
+                class="burger-btn btn"
+                onclick="showAllergens('beef-burger')"
+              >
+                Allergen Info
+              </button>
+              <p
+                class="allergens"
+                id="allergens-beef-burger"
+                style="display: none"
+              >
+                Contains: eggs, milk, wheat flour
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€8.50</span>
+              </p>
             </div>
-        </div>
-        <!-- Rice box -->
-        <div class="text-center mt-4 rb-meal-item mx-2">
-            <h2> <i class="fa-solid fa-fire"></i> Rice Box Meal <i class="fa-solid fa-fire"></i></h2>
-            <hr>
-            <div class=" row mt-4">
-                <div class="menu-item">
-                    <ul>
-                        <li class="d-inline">🔘 Chicken</li>
-                        <li class="d-inline">🔘 Pork Spring Roll</li>
-                    </ul>
-                    <ul>
-                        <li class="d-inline text-start-sm">🔘 Side Salad</li>
-                        <li class="d-inline">🔘 Dessert</li>
-                    </ul>
-                    <img src="assets/images/rice-box1.png" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="Rice Box">
-                    <p class="mt-2">Delicious Rice Box with Chicken, Pork Spring Roll, Side Salad and Dessert.</p>
-                    <div>
-                        <button class="r-box-btn btn" onclick="showAllergens('r-box')">Allergen Info</button>
-                        <p class="allergens" id="allergens-r-box" style="display: none">Contains: eggs, milk, wheat
-                            flour
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€10.00</span>
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class=" menu-item">
+            <h3>Chicken Burger & Chips</h3>
+            <img
+              src="assets/images/chicken-burger-chips.jpg"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="Chicken Burger"
+            />
+            <p class="mt-2">
+              Delicious chicken burger with special sauce, fresh lettuce, and
+              melted cheese.
+            </p>
+            <div>
+              <button class="ck-btn btn" onclick="showAllergens('ck-burger')">
+                Allergen Info
+              </button>
+              <p
+                class="allergens"
+                id="allergens-ck-burger"
+                style="display: none"
+              >
+                Contains: eggs, milk, wheat flour
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€8.50</span>
+              </p>
             </div>
+          </div>
         </div>
-        <!-- Chicken -->
-        <div class="text-center mt-4 fr-chicken mx-2">
-            <h2> <i class="fa-solid fa-fire"></i> Chicken in BBQ Sauce <i class="fa-solid fa-fire"></i></h2>
-            <hr>
-            <div class="row mt-4">
-                <div class="menu-item">
-                    <!-- <h3>Regular Fried Chicken &amp; Chips</h3> -->
-                    <ul>
-                        <li class="d-inline">🔘 Fried Rice</li>
-                        <li class="d-inline">🔘 Side Salad</li>
-                        <li class="d-inline">🔘 Dessert</li>
-                    </ul>
-                    <img src="assets/images/chicken-bbq1.png" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="Chicken in BBQ sauce">
-                    <p class="mt-2">Delicious Chicken in BBQ sauce with Fried Rice, Side Salad and Dessert.</p>
-                    <div>
-                        <button class="bbq-btn btn" onclick="showAllergens('bbq-chicken')">Allergen Info</button>
-                        <p class="allergens" id="allergens-bbq-chicken" style="display: none">Contains: eggs, milk,
-                            wheat
-                            flour
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€10.00</span>
-                        </p>
-                    </div>
-                </div>
+      </div>
+      <!-- Rice box -->
+      <div class="text-center mt-4 rb-meal-item mx-2">
+        <h2>
+          <i class="fa-solid fa-fire"></i> Rice Box Meal
+          <i class="fa-solid fa-fire"></i>
+        </h2>
+        <hr />
+        <div class=" row mt-4">
+          <div class="menu-item">
+            <ul>
+              <li class="d-inline">🔘 Chicken</li>
+              <li class="d-inline">🔘 Pork Spring Roll</li>
+            </ul>
+            <ul>
+              <li class="d-inline text-start-sm">🔘 Side Salad</li>
+              <li class="d-inline">🔘 Dessert</li>
+            </ul>
+            <img
+              src="assets/images/rice-box1.png"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="Rice Box"
+            />
+            <p class="mt-2">
+              Delicious Rice Box with Chicken, Pork Spring Roll, Side Salad and
+              Dessert.
+            </p>
+            <div>
+              <button class="r-box-btn btn" onclick="showAllergens('r-box')">
+                Allergen Info
+              </button>
+              <p class="allergens" id="allergens-r-box" style="display: none">
+                Contains: eggs, milk, wheat flour
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€10.00</span>
+              </p>
             </div>
+          </div>
         </div>
-        <!-- Spring Rolls -->
-        <div class="text-center mt-4 spring-rolls mx-2">
-            <h2> <i class="fa-solid fa-fire"></i> Pork and Chicken Spring Rolls <i class="fa-solid fa-fire"></i></h2>
-            <hr>
-            <div class="row mt-4">
-                <div class="menu-item">
-                    <h3>Pork Spring Roll</h3>
-                    <img src="assets/images/pk-spring-roll.png" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="spring roll">
-                    <p class="mt-2">Delicious Pork Spring Roll with Fried Rice, Side Salad and Dessert.</p>
-                    <div>
-                        <button class="psr-btn btn" onclick="showAllergens('psr')">Allergen Info</button>
-                        <p class="allergens" id="allergens-psr" style="display: none">Contains: Wheat Flour Celery soya
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€10.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <h3>Chicken Spring Roll</h3>
-                    <img src="assets/images/pk-spring-roll.png" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="spring roll">
-                    <p class="mt-2">Delicious Chicken Spring Roll with Fried Rice, Side Salad and Dessert.</p>
-                    <div>
-                        <button class="csr-btn btn" onclick="showAllergens('csr')">Allergen Info</button>
-                        <p class="allergens" id="allergens-csr" style="display: none">Contains: Wheat Flour Celery soya
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€10.00</span>
-                        </p>
-                    </div>
-                </div>
+      </div>
+      <!-- Chicken -->
+      <div class="text-center mt-4 fr-chicken mx-2">
+        <h2>
+          <i class="fa-solid fa-fire"></i> Chicken in BBQ Sauce
+          <i class="fa-solid fa-fire"></i>
+        </h2>
+        <hr />
+        <div class="row mt-4">
+          <div class="menu-item">
+            <!-- <h3>Regular Fried Chicken &amp; Chips</h3> -->
+            <ul>
+              <li class="d-inline">🔘 Fried Rice</li>
+              <li class="d-inline">🔘 Side Salad</li>
+              <li class="d-inline">🔘 Dessert</li>
+            </ul>
+            <img
+              src="assets/images/chicken-bbq1.png"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="Chicken in BBQ sauce"
+            />
+            <p class="mt-2">
+              Delicious Chicken in BBQ sauce with Fried Rice, Side Salad and
+              Dessert.
+            </p>
+            <div>
+              <button
+                class="bbq-btn btn"
+                onclick="showAllergens('bbq-chicken')"
+              >
+                Allergen Info
+              </button>
+              <p
+                class="allergens"
+                id="allergens-bbq-chicken"
+                style="display: none"
+              >
+                Contains: eggs, milk, wheat flour
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€10.00</span>
+              </p>
             </div>
+          </div>
         </div>
-        <!-- Noodles -->
-        <div class=" text-center mt-4 noodles-items mx-2">
-            <h2><i class="fa-solid fa-fire"></i> Noodles / Pancit <i class="fa-solid fa-fire"></i></h2>
-            <hr>
-            <div class="row mt-4">
-                <div class="menu-item">
-                    <h3>Stir Fry Noodles</h3>
-                    <img src="assets/images/noodles-meal.png" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="stir fry noodles">
-                    <p class="mt-2">Delicious Stir Fry Noodles with Chicken and Vegetables plus Side Salad and Dessert.
-                    </p>
-                    <div>
-                        <button class="noodles-btn btn" onclick="showAllergens('noodles-pancit')">Allergen Info</button>
-                        <p class="allergens" id="allergens-noodles-pancit" style="display: none">Contains: eggs, milk,
-                            wheat
-                            flour
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€10.00</span>
-                        </p>
-                    </div>
-                </div>
+      </div>
+      <!-- Spring Rolls -->
+      <div class="text-center mt-4 spring-rolls mx-2">
+        <h2>
+          <i class="fa-solid fa-fire"></i> Pork and Chicken Spring Rolls
+          <i class="fa-solid fa-fire"></i>
+        </h2>
+        <hr />
+        <div class="row mt-4">
+          <div class="menu-item">
+            <h3>Pork Spring Roll</h3>
+            <img
+              src="assets/images/pk-spring-roll.png"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="spring roll"
+            />
+            <p class="mt-2">
+              Delicious Pork Spring Roll with Fried Rice, Side Salad and
+              Dessert.
+            </p>
+            <div>
+              <button class="psr-btn btn" onclick="showAllergens('psr')">
+                Allergen Info
+              </button>
+              <p class="allergens" id="allergens-psr" style="display: none">
+                Contains: Wheat Flour Celery soya
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€10.00</span>
+              </p>
             </div>
-        </div>
-        <!-- Student Meal -->
-        <div class="text-center mt-4 s-meal-items mx-2">
-            <h2><i class="fa-solid fa-fire"></i> Student Meal Deal <i class="fa-solid fa-fire"></i></h2>
-            <hr>
-            <div class="row mt-4">
-                <div class="menu-item">
-                    <!-- <h3>Student Meal Deal</h3> -->
-                    <ul>
-                        <li class="d-inline">🔘 Goujons</li>
-                        <li class="d-inline">🔘 Spring Rolls</li>
-                        <li class="d-inline">🔘 Chips</li>
-                    </ul>
-                    <img src="assets/images/chicken-goujons-chips.jpg" class="img-fluid"
-                        style="width: 200px; height:200px; border-radius: 10%;" alt="chicken goujons and chips">
-                    <p class="mt-2">Delicious meal for Student that includes Goujons, Spring Rolls, and Chips.</p>
-                    <div>
-                        <button class="smd-btn btn" onclick="showAllergens('meal-deal')">Allergen Info</button>
-                        <p class="allergens" id="allergens-meal-deal" style="display: none">Contains: eggs, milk,
-                            wheat
-                            flour
-                        </p>
-                        <p class="fw-bold">Price:
-                            <span>€7.00</span>
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="menu-item">
+            <h3>Chicken Spring Roll</h3>
+            <img
+              src="assets/images/pk-spring-roll.png"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="spring roll"
+            />
+            <p class="mt-2">
+              Delicious Chicken Spring Roll with Fried Rice, Side Salad and
+              Dessert.
+            </p>
+            <div>
+              <button class="csr-btn btn" onclick="showAllergens('csr')">
+                Allergen Info
+              </button>
+              <p class="allergens" id="allergens-csr" style="display: none">
+                Contains: Wheat Flour Celery soya
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€10.00</span>
+              </p>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- Noodles -->
+      <div class=" text-center mt-4 noodles-items mx-2">
+        <h2>
+          <i class="fa-solid fa-fire"></i> Noodles / Pancit
+          <i class="fa-solid fa-fire"></i>
+        </h2>
+        <hr />
+        <div class="row mt-4">
+          <div class="menu-item">
+            <h3>Stir Fry Noodles</h3>
+            <img
+              src="assets/images/noodles-meal.png"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="stir fry noodles"
+            />
+            <p class="mt-2">
+              Delicious Stir Fry Noodles with Chicken and Vegetables plus Side
+              Salad and Dessert.
+            </p>
+            <div>
+              <button
+                class="noodles-btn btn"
+                onclick="showAllergens('noodles-pancit')"
+              >
+                Allergen Info
+              </button>
+              <p
+                class="allergens"
+                id="allergens-noodles-pancit"
+                style="display: none"
+              >
+                Contains: eggs, milk, wheat flour
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€10.00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Student Meal -->
+      <div class="text-center mt-4 s-meal-items mx-2">
+        <h2>
+          <i class="fa-solid fa-fire"></i> Student Meal Deal
+          <i class="fa-solid fa-fire"></i>
+        </h2>
+        <hr />
+        <div class="row mt-4">
+          <div class="menu-item">
+            <!-- <h3>Student Meal Deal</h3> -->
+            <ul>
+              <li class="d-inline">🔘 Goujons</li>
+              <li class="d-inline">🔘 Spring Rolls</li>
+              <li class="d-inline">🔘 Chips</li>
+            </ul>
+            <img
+              src="assets/images/chicken-goujons-chips.jpg"
+              class="img-fluid"
+              style="width: 200px; height:200px; border-radius: 10%;"
+              alt="chicken goujons and chips"
+            />
+            <p class="mt-2">
+              Delicious meal for Student that includes Goujons, Spring Rolls,
+              and Chips.
+            </p>
+            <div>
+              <button class="smd-btn btn" onclick="showAllergens('meal-deal')">
+                Allergen Info
+              </button>
+              <p
+                class="allergens"
+                id="allergens-meal-deal"
+                style="display: none"
+              >
+                Contains: eggs, milk, wheat flour
+              </p>
+              <p class="fw-bold">
+                Price:
+                <span>€7.00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="text-center mt-4 soft-rice-item mx-4">
-        <h2> <i class="fa-solid fa-fire"></i> Rice Porridge/Lugaw <i class="fa-solid fa-fire"></i></h2>
-        <hr>
-        <div class="row mt-4">
-            <div class="menu-item">
-                <h3>Also similar taste as :</h3>
-                <ul>
-                    <li class="d-inline">🔘 Congee</li>
-                    <li class="d-inline">🔘 Arozz caldo</li>
-                    <li class="d-inline">🔘 Bubur</li>
-                </ul>
-                <img src="assets/images/rice-porridge.png" class="img-fluid"
-                    style="width: 200px; height:200px; border-radius: 10%;" alt="rice porridge">
-                <p class="mt-2">Delicious hot rice broth top with vegetables and boiled egg ideal for breakfast.</p>
-                <div>
-                    <button class="soft-rice-btn btn" onclick="showAllergens('lugaw')">Allergen Info</button>
-                    <p class="allergens" id="allergens-lugaw" style="display: none">Contains: eggs, milk,
-                        wheat
-                        flour
-                    </p>
-                    <p class="fw-bold">Price:
-                        <span>€5.00</span>
-                    </p>
-                </div>
-            </div>
+      <h2>
+        <i class="fa-solid fa-fire"></i> Rice Porridge/Lugaw
+        <i class="fa-solid fa-fire"></i>
+      </h2>
+      <hr />
+      <div class="row mt-4">
+        <div class="menu-item">
+          <h3>Also similar taste as :</h3>
+          <ul>
+            <li class="d-inline">🔘 Congee</li>
+            <li class="d-inline">🔘 Arozz caldo</li>
+            <li class="d-inline">🔘 Bubur</li>
+          </ul>
+          <img
+            src="assets/images/rice-porridge.png"
+            class="img-fluid"
+            style="width: 200px; height:200px; border-radius: 10%;"
+            alt="rice porridge"
+          />
+          <p class="mt-2">
+            Delicious hot rice broth top with vegetables and boiled egg ideal
+            for breakfast.
+          </p>
+          <div>
+            <button class="soft-rice-btn btn" onclick="showAllergens('lugaw')">
+              Allergen Info
+            </button>
+            <p class="allergens" id="allergens-lugaw" style="display: none">
+              Contains: eggs, milk, wheat flour
+            </p>
+            <p class="fw-bold">
+              Price:
+              <span>€5.00</span>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <!--footer-->
     <footer class="bg-dark p-4 mt-5">
-        <div class="container-fluid">
-            <div class="row p-2">
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <img class="footer_logo d-inline" src="./assets/images/bens-new-logo.png"
-                        alt="Tito Ben's Food Truck Logo">
-                    <p class="d-inline">© <span id="copyrightYear"></span> Tito Ben's Foodtruck</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <a href="https://www.facebook.com/profile.php?id=100092185530097" class="text-decoration-none"
-                        target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i>
-                        Follow us on Facebook
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2 ">
-                    <a href="privacy-policy.html" class="text-decoration-none"><i class="fa-solid fa-shield-halved"></i>
-                        Privacy Policy
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <p><i class="fa-solid fa-globe"></i>
-                        Web design by: <span class="bg-light p-2 rounded d-block mt-2 text-center"><i
-                                class="fa-solid fa-dove"></i> PAM Web Solutions</span>
-                    </p>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row p-2">
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <img
+              class="footer_logo d-inline"
+              src="./assets/images/bens-new-logo.png"
+              alt="Tito Ben's Food Truck Logo"
+            />
+            <p class="d-inline">
+              © <span id="copyrightYear"></span> Tito Ben's Foodtruck
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <a
+              href="https://www.facebook.com/profile.php?id=100092185530097"
+              class="text-decoration-none"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-facebook"></i>
+              Follow us on Facebook
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2 ">
+            <a href="privacy-policy.html" class="text-decoration-none"
+              ><i class="fa-solid fa-shield-halved"></i>
+              Privacy Policy
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <p>
+              <i class="fa-solid fa-globe"></i> Web design by:
+              <span class="bg-light p-2 rounded d-block mt-2 text-center"
+                ><i class="fa-solid fa-dove"></i> PAM Web Solutions</span
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- Font Awesome kit -->
-    <script src="https://kit.fontawesome.com/0969cca03a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://kit.fontawesome.com/0969cca03a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/0969cca03a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0969cca03a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Link to the new JavaScript file -->
     <script src="assets/js/menu.js" defer></script>
     <script src="assets/js/current_year.js" defer></script>
-</body>
-
+  </body>
 </html>

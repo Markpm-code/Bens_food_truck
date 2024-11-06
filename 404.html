@@ -1,130 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A food truck website serving Filipino and Irish foods in the heart of galway city">
-    <meta name="keywords"
-        content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A food truck website serving Filipino and Irish foods in the heart of galway city"
+    />
+    <meta
+      name="keywords"
+      content="food truck galway, asian takeaway, asian food, filipino food, irish food, lumpia, spring rolls, lugaw, congee, fried rice, chinise take away"
+    />
     <!-- Favicon icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
     <!-- css with render-blocking resources link -->
-    <link rel="preload" href="assets/css/styles.css" as="style">
-    <link rel="preload" href="assets/css/menu.css" as="style">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="preload" href="assets/css/menu.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
     <title>Tito Ben's Food Truck</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo rounded" src="./assets/images/bens-new-logo.png" alt="Tito Ben's Food Truck Logo">
+      <nav class="navbar navbar-expand-lg navbar-dark p-2 red-link mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo rounded"
+              src="./assets/images/bens-new-logo.png"
+              alt="Tito Ben's Food Truck Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse  justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link  fs-5 " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link fs-5 dropdown-toggle"
+                  href="contact.html"
+                  id="contactDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5 " href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link fs-5 dropdown-toggle" href="contact.html" id="contactDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Contact
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
-                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#location">Location</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  fs-5" href="services.html">Services</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Location</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  fs-5" href="services.html">Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="container-fluid">
-        <div class="col-md-6 text-center off-track mx-auto">
-            <div>
-                <h1>
-                    Sorry, the page you are looking for is off-track on this site.
-                </h1>
-                <img src="./assets/images/off-truck.png" class="img-fluid mx-auto" alt="off track">
-            </div>
-            <div class="my-4">
-                <h4>
-                    <a href="index.html" class="btn btn-lg btn-outline-dark text-uppercase py-2  text-white rounded">
-                        Please return to homepage
-                    </a>
-                </h4>
-            </div>
+      <div class="col-md-6 text-center off-track mx-auto">
+        <div>
+          <h1>
+            Sorry, the page you are looking for is off-track on this site.
+          </h1>
+          <img
+            src="./assets/images/off-truck.png"
+            class="img-fluid mx-auto"
+            alt="off track"
+          />
         </div>
+        <div class="my-4">
+          <h4>
+            <a
+              href="index.html"
+              class="btn btn-lg btn-outline-dark text-uppercase py-2  text-white rounded"
+            >
+              Please return to homepage
+            </a>
+          </h4>
+        </div>
+      </div>
     </div>
     <!--footer-->
     <footer class="bg-dark p-4 mt-5">
-        <div class="container-fluid">
-            <div class="row p-2">
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <img class="footer_logo d-inline" src="./assets/images/bens-new-logo.png"
-                        alt="Tito Ben's Food Truck Logo">
-                    <p class="d-inline">© <span id="copyrightYear"></span> Tito Ben's Foodtruck</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <a href="https://www.facebook.com/profile.php?id=100092185530097" class="text-decoration-none"
-                        target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i>
-                        Follow us on Facebook
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2 ">
-                    <a href="privacy-policy.html" class="text-decoration-none"><i class="fa-solid fa-shield-halved"></i>
-                        Privacy Policy
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 g-2">
-                    <p><i class="fa-solid fa-globe"></i>
-                        Web design by: <span class="bg-light p-2 rounded d-block mt-2 text-center"><i class="fa-solid fa-dove"></i> PAM Web Solutions</span>
-                    </p>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row p-2">
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <img
+              class="footer_logo d-inline"
+              src="./assets/images/bens-new-logo.png"
+              alt="Tito Ben's Food Truck Logo"
+            />
+            <p class="d-inline">
+              © <span id="copyrightYear"></span> Tito Ben's Foodtruck
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <a
+              href="https://www.facebook.com/profile.php?id=100092185530097"
+              class="text-decoration-none"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-facebook"></i>
+              Follow us on Facebook
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2 ">
+            <a href="privacy-policy.html" class="text-decoration-none"
+              ><i class="fa-solid fa-shield-halved"></i>
+              Privacy Policy
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 g-2">
+            <p>
+              <i class="fa-solid fa-globe"></i> Web design by:
+              <span class="bg-light p-2 rounded d-block mt-2 text-center"
+                ><i class="fa-solid fa-dove"></i> PAM Web Solutions</span
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
     <!--fontawesome kit-->
-    <script src="https://kit.fontawesome.com/0969cca03a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://kit.fontawesome.com/0969cca03a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/menu.js" defer></script>
     <script src="assets/js/current_year.js" defer></script>
-</body>
-
+  </body>
 </html>
