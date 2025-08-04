@@ -114,6 +114,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.halo-halo-p {
+  text-align: justify;
+}
+
 @media (min-width: 768px) and (max-width:1300px) {
   .menu-list div {
     flex: 1 1 calc(50% - 20px);
