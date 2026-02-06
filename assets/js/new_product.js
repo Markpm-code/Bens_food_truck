@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Hide modal after 20 seconds
         setTimeout(() => {
             myModal.hide();
-        }, 20000);
+        }, 10000);
 
     }, 40000);
 });
